@@ -2,23 +2,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>Binary Calculator</title>
-  <link rel="stylesheet" href="css/binaryCalculator.css" type="text/css">
-  <script src="js/binaryCalculator.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <title>Binary Calculator</title>
+    <link rel="stylesheet" href="css/binaryCalculator.css" type="text/css">
+    <script src="js/binaryCalculator.js" type="text/javascript" defer></script>
 </head>
 <body>
 <div id="res"></div>
 <div id="btns">
-  <button id="btn0" onclick="addZero()">0</button>
-  <button id="btn1" onclick="addOne()">1</button>
-  <button id="btnClr" onclick="clearAll()">C</button>
-  <button id="btnEql" onclick="calc()">=</button>
+    <button id="btn0" onclick="calc('0')">0</button>
+    <button id="btn1" onclick="calc('1')">1</button>
+    <button id="btnClr" onclick="calc('c')">C</button>
+    <button id="btnEql" onclick="calc('o')">=</button>
 
-  <button id="btnSum" onclick="addPlus()">+</button>
-  <button id="btnSub" onclick="addMinus()">-</button>
-  <button id="btnMul" onclick="addMul()">*</button>
-  <button id="btnDiv" onclick="addDiv()">/</button>
+    <button id="btnSum" onclick="calc('+')">+</button>
+    <button id="btnSub" onclick="calc('-')">-</button>
+    <button id="btnMul" onclick="calc('*')">*</button>
+    <button id="btnDiv" onclick="calc('/')">/</button>
 </div>
 </body>
 </html>
